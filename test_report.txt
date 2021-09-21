@@ -17,11 +17,11 @@ book_id    title                                 author              checked_out
 Enter a command: checkout
 Enter Borrower Id: L34
 Enter Book Id: A234
-Andrea Selleck has checked out Dodie Smith
+Andrea Selleck has checked out The 101 Dalmations
 Enter a command: checkout
 Enter Borrower Id: L34
 Enter Book Id: A675
-Andrea Selleck has checked out Mark Twain
+Andrea Selleck has checked out The Adventures of Huckleberry Finn
 Enter a command: books
 book_id    title                                 author              checked_out    borrower_id    borrower_name
 ---------  ------------------------------------  ------------------  -------------  -------------  ----------------
@@ -41,7 +41,7 @@ Book with ID  A111 does not exist
 Enter a command: checkout
 Enter Borrower Id: L84
 Enter Book Id: C101
-Ayesha Ford has checked out John Grisham
+Ayesha Ford has checked out The Firm
 Enter a command: books
 book_id    title                                 author              checked_out    borrower_id    borrower_name
 ---------  ------------------------------------  ------------------  -------------  -------------  ----------------
@@ -61,7 +61,7 @@ Book with ID  Z111  does not exist
 Enter a command: return
 Enter Borrower Id: L34
 Enter Book Id: A234
-Andrea Selleck has returned  Dodie Smith
+Andrea Selleck has returned  The 101 Dalmations
 Enter a command: books
 book_id    title                                 author              checked_out    borrower_id    borrower_name
 ---------  ------------------------------------  ------------------  -------------  -------------  ----------------
@@ -74,10 +74,7 @@ book_id    title                                 author              checked_out
 "B778"     "Dracula"                             "Bram Stoker"       "N"            ""             ""
 "B812"     "A Farewell to Arms"                  "Ernest Hemingway"  "N"            ""             ""
 "C101"     "The Firm"                            "John Grisham"      "Y"            "L84"          "Ayesha Ford"
-Enter a command: reseet
-invalid command, please enter a valid command
 Enter a command: reset
-default name  newdb
 Data has been reset
 Enter a command: books
 book_id    title                                 author              checked_out    borrower_id    borrower_name

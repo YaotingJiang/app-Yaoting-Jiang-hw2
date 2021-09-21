@@ -21,7 +21,7 @@ def get_borrower_name(borrowerID):
 def get_book_name(bookID):
     for book in Book.objects:
         if book.book_id == bookID:
-            return book.author
+            return book.title
 
 def checkout_book(borrowerID, bookID):
     for b in Book.objects:
@@ -51,7 +51,7 @@ def get_books():
         book_list.append([f'"{b.book_id}"', f'"{b.title}"', f'"{b.author}"', f'"{b.checked_out}"',
                           f'"{b.borrower_id}"', f'"{b.borrower_name}"'])
     print(tabulate(book_list,
-                    headers=['book_id', 'title','author', 'checked_out', 'borrower_id', 'borrower_name']))
+                    headers=['book_id', 'title', 'author', 'checked_out', 'borrower_id', 'borrower_name']))
 
 
 
