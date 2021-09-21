@@ -1,0 +1,97 @@
+/usr/local/bin/python3.6 "/Users/jyt/Desktop/cmu/2021 Fall/APP/Week3/app-Yaoting-Jiang-hw2/lms.py"
+Enter a database name: newdb
+Enter a command: reset
+Data has been reset
+Enter a command: books
+book_id    title                                 author              checked_out    borrower_id    borrower_name
+---------  ------------------------------------  ------------------  -------------  -------------  ---------------
+"A234"     "The 101 Dalmations"                  "Dodie Smith"       "N"            ""             ""
+"A675"     "The Adventures of Huckleberry Finn"  "Mark Twain"        "N"            ""             ""
+"A212"     "Bag of Bones"                        "Stephen King"      "N"            ""             ""
+"B671"     "Charlie and the Chocolate Factory"   "Roald Dahl"        "N"            ""             ""
+"B534"     "Charlotte's Web"                     "E.B.White"         "N"            ""             ""
+"B777"     "A Christmas Carol"                   "Charles Dickens"   "N"            ""             ""
+"B778"     "Dracula"                             "Bram Stoker"       "N"            ""             ""
+"B812"     "A Farewell to Arms"                  "Ernest Hemingway"  "N"            ""             ""
+"C101"     "The Firm"                            "John Grisham"      "N"            ""             ""
+Enter a command: checkout
+Enter Borrower Id: L34
+Enter Book Id: A234
+Andrea Selleck has checked out Dodie Smith
+Enter a command: checkout
+Enter Borrower Id: L34
+Enter Book Id: A675
+Andrea Selleck has checked out Mark Twain
+Enter a command: books
+book_id    title                                 author              checked_out    borrower_id    borrower_name
+---------  ------------------------------------  ------------------  -------------  -------------  ----------------
+"A234"     "The 101 Dalmations"                  "Dodie Smith"       "Y"            "L34"          "Andrea Selleck"
+"A675"     "The Adventures of Huckleberry Finn"  "Mark Twain"        "Y"            "L34"          "Andrea Selleck"
+"A212"     "Bag of Bones"                        "Stephen King"      "N"            ""             ""
+"B671"     "Charlie and the Chocolate Factory"   "Roald Dahl"        "N"            ""             ""
+"B534"     "Charlotte's Web"                     "E.B.White"         "N"            ""             ""
+"B777"     "A Christmas Carol"                   "Charles Dickens"   "N"            ""             ""
+"B778"     "Dracula"                             "Bram Stoker"       "N"            ""             ""
+"B812"     "A Farewell to Arms"                  "Ernest Hemingway"  "N"            ""             ""
+"C101"     "The Firm"                            "John Grisham"      "N"            ""             ""
+Enter a command: checkout
+Enter Borrower Id: L84
+Enter Book Id: A111
+Book with ID  A111 does not exist
+Enter a command: checkout
+Enter Borrower Id: L84
+Enter Book Id: C101
+Ayesha Ford has checked out John Grisham
+Enter a command: books
+book_id    title                                 author              checked_out    borrower_id    borrower_name
+---------  ------------------------------------  ------------------  -------------  -------------  ----------------
+"A234"     "The 101 Dalmations"                  "Dodie Smith"       "Y"            "L34"          "Andrea Selleck"
+"A675"     "The Adventures of Huckleberry Finn"  "Mark Twain"        "Y"            "L34"          "Andrea Selleck"
+"A212"     "Bag of Bones"                        "Stephen King"      "N"            ""             ""
+"B671"     "Charlie and the Chocolate Factory"   "Roald Dahl"        "N"            ""             ""
+"B534"     "Charlotte's Web"                     "E.B.White"         "N"            ""             ""
+"B777"     "A Christmas Carol"                   "Charles Dickens"   "N"            ""             ""
+"B778"     "Dracula"                             "Bram Stoker"       "N"            ""             ""
+"B812"     "A Farewell to Arms"                  "Ernest Hemingway"  "N"            ""             ""
+"C101"     "The Firm"                            "John Grisham"      "Y"            "L84"          "Ayesha Ford"
+Enter a command: return
+Enter Borrower Id: L19
+Enter Book Id: Z111
+Book with ID  Z111  does not exist
+Enter a command: return
+Enter Borrower Id: L34
+Enter Book Id: A234
+Andrea Selleck has returned  Dodie Smith
+Enter a command: books
+book_id    title                                 author              checked_out    borrower_id    borrower_name
+---------  ------------------------------------  ------------------  -------------  -------------  ----------------
+"A234"     "The 101 Dalmations"                  "Dodie Smith"       "N"            ""             ""
+"A675"     "The Adventures of Huckleberry Finn"  "Mark Twain"        "Y"            "L34"          "Andrea Selleck"
+"A212"     "Bag of Bones"                        "Stephen King"      "N"            ""             ""
+"B671"     "Charlie and the Chocolate Factory"   "Roald Dahl"        "N"            ""             ""
+"B534"     "Charlotte's Web"                     "E.B.White"         "N"            ""             ""
+"B777"     "A Christmas Carol"                   "Charles Dickens"   "N"            ""             ""
+"B778"     "Dracula"                             "Bram Stoker"       "N"            ""             ""
+"B812"     "A Farewell to Arms"                  "Ernest Hemingway"  "N"            ""             ""
+"C101"     "The Firm"                            "John Grisham"      "Y"            "L84"          "Ayesha Ford"
+Enter a command: reseet
+invalid command, please enter a valid command
+Enter a command: reset
+default name  newdb
+Data has been reset
+Enter a command: books
+book_id    title                                 author              checked_out    borrower_id    borrower_name
+---------  ------------------------------------  ------------------  -------------  -------------  ---------------
+"A234"     "The 101 Dalmations"                  "Dodie Smith"       "N"            ""             ""
+"A675"     "The Adventures of Huckleberry Finn"  "Mark Twain"        "N"            ""             ""
+"A212"     "Bag of Bones"                        "Stephen King"      "N"            ""             ""
+"B671"     "Charlie and the Chocolate Factory"   "Roald Dahl"        "N"            ""             ""
+"B534"     "Charlotte's Web"                     "E.B.White"         "N"            ""             ""
+"B777"     "A Christmas Carol"                   "Charles Dickens"   "N"            ""             ""
+"B778"     "Dracula"                             "Bram Stoker"       "N"            ""             ""
+"B812"     "A Farewell to Arms"                  "Ernest Hemingway"  "N"            ""             ""
+"C101"     "The Firm"                            "John Grisham"      "N"            ""             ""
+Enter a command: exit
+Exiting
+
+Process finished with exit code 0
