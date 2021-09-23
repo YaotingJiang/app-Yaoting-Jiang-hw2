@@ -10,6 +10,7 @@ def reset_db():
     newdb_connection.drop_database(default_db_name)
     add_books()
     add_borrowers()
+    print(default_db_name, 'is connected')
 
 
 def get_borrower_name(borrowerID):
