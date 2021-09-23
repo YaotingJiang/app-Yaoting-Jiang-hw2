@@ -43,7 +43,7 @@ def return_book(borrowerID, bookID):
             b.borrower_id = ""
             b.borrower_name = ""
             b.save()
-            print(get_borrower_name(borrowerID), 'has returned ', get_book_name(bookID))
+            print(get_borrower_name(borrowerID), 'has returned', get_book_name(bookID))
 
 def get_books():
     book_list = []
@@ -83,7 +83,7 @@ if __name__ == "__main__":
             # checkout a book
             if action == "checkout":
                 if not is_bookid_valid:
-                    print('Book with ID ', book_id, 'does not exist')
+                    print('Book with ID', book_id, 'does not exist')
                 elif not is_borrowerid_valid:
                     print('Borrower with ID', borrower_id, 'does not exist')
                 else:
@@ -92,9 +92,9 @@ if __name__ == "__main__":
             # return a book
             if action == "return":
                 if not is_bookid_valid:
-                    print('Book with ID ', book_id, ' does not exist')
+                    print('Book with ID', book_id, 'does not exist')
                 elif not is_borrowerid_valid:
-                    print('Borrower with ID', borrower_id, ' is not a valid borrower')
+                    print('Borrower with ID', borrower_id, 'is not a valid borrower')
                 else:
                     return_book(borrower_id, book_id)
 
