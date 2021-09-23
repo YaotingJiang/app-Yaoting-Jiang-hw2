@@ -47,11 +47,16 @@ def return_book(borrowerID, bookID):
 
 def get_books():
     book_list = []
+    headers = ['book_id', 'title', 'author', 'checked_out', 'borrower_id', 'borrower_name']
+
     for b in Book.objects:
         book_list.append([f'"{b.book_id}"', f'"{b.title}"', f'"{b.author}"', f'"{b.checked_out}"',
                           f'"{b.borrower_id}"', f'"{b.borrower_name}"'])
-    print(tabulate(book_list,
-                    headers=['book_id', 'title', 'author', 'checked_out', 'borrower_id', 'borrower_name']))
+
+    row_formatter ="{:>40}" * (len(headers))
+    print(row_formatter.format(*headers))
+    for row in book_list:
+        print(row_formatter.format(*row))
 
 
 
