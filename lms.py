@@ -1,6 +1,5 @@
 from main import Book, Borrower, add_books, add_borrowers
 from mongoengine import *
-from tabulate import tabulate
 
 
 default_db_name = 'app-yaotingj'
