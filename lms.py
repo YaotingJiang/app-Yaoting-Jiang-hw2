@@ -27,17 +27,17 @@ def checkout_book(borrowerID, bookID):
     for b in Book.objects:
         if b.book_id == bookID and b.checked_out == "Y" and b.borrower_id != borrowerID:
             print(get_book_name(bookID), "is already checked out by someone")
-        elif b.book_id == bookID and b.checked_out == "N":
+        elif b.book_id == bookID and b.checked_out == "N" and b.borrower_id != borrowerID:
             b.checked_out = "Y"
             b.borrower_id=borrowerID
             b.borrower_name=get_borrower_name(borrowerID)
             b.save()
-    print(get_borrower_name(borrowerID), 'has checked out', get_book_name(bookID))
+            print(get_borrower_name(borrowerID), 'has checked out', get_book_name(bookID))
 
 def return_book(borrowerID, bookID):
     for b in Book.objects:
         if b.book_id == bookID and b.checked_out == "N" and b.borrower_id != borrowerID :
-            print(get_borrower_name(b.borrower_id), 'has not currently checked out', get_book_name(bookID))
+            print(get_borrower_name(borrowerID), 'has not currently checked out', get_book_name(bookID))
         elif b.book_id == bookID and b.checked_out == "Y" and b.borrower_id == borrowerID:
             b.checked_out = "N"
             b.borrower_id = ""
